@@ -38,8 +38,10 @@ public class CustomLinkedList {
             head = null;
         }
 
-        Node first = head;
-        Node second = head;
+        // list = [a, b, c, d]; k = 2
+
+        Node first = head; // a
+        Node second = head; // a
 
         for(int i = 0; i < k; i++) {
             second = second.next;
@@ -50,6 +52,10 @@ public class CustomLinkedList {
                 }
                 return;
             }
+        }
+        while (second.next != null) {
+            first = first.next;
+            second = second.next;
         }
 
     }
