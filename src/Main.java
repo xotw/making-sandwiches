@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args){
         StringAlgorithms sA = new StringAlgorithms();
         ArrayAlgorithms aA = new ArrayAlgorithms();
+        QueueStackAlgorithms qsA = new QueueStackAlgorithms();
 
 //        List<Integer> dbTest1 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 100, 200, 500, 999);
 //
@@ -90,12 +91,15 @@ public class Main {
 //        linkedList.deleteBackHalf();
 //        linkedList.displayContents();
 
-        int[] array = {1, 2, 3};
+//        int[] array = {1, 2, 3};
+//
+//        Stack<Integer> stack = new Stack<>();
+//        stack.push(array[0]);
+//
+//        System.out.println(stack);
 
-        Stack<Integer> stack = new Stack<>();
-        stack.push(array[0]);
+        qsA.printNextGreaterElement(new int[] {16, 7, 2, 15});
 
-        System.out.println(stack);
 
 
 
