@@ -34,7 +34,7 @@ public class ArrayAlgorithms {
     }
 
     // BINARY SEARCH //
-    // this type of search assumes that we are dealing wth a sorted array //
+    // this type of search assumes that we are dealing with a sorted array //
     //  To, keep things simple, we'll return a boolean that's true or false depending on whether the item exists.
     //  Now for the implementation. The first step is to create variables for our min and max indices.
     //  This will help us bucket the inner array we're searching through. To start, that's the full array,
