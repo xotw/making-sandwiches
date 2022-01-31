@@ -42,12 +42,25 @@ public class QueueStackAlgorithms {
 
         for (int i = 1; i < array.length; i++) {
             int next = array[i];
+            if(!stack.isEmpty()) {
+                int popped = stack.pop();
+                while (popped < next) {
+                    System.out.println(popped + " --> " + next);
+                    if (stack.isEmpty()) {
+                        break;
+                    }
+                    popped = stack.pop();
+                }
+
+                if (popped > next) {
+                    stack.push((popped));
+                }
+            }
             stack.push(next);
-
         }
-
-
-
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop() + " --> " + -1);
+        }
     }
 
 
