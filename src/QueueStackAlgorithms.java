@@ -81,6 +81,24 @@ public class QueueStackAlgorithms {
         return stack.isEmpty();
     }
 
+    public boolean hasMatchingParentheses2(String s) {
+        int matchingSymbolTracker = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char current = s.charAt(i);
+            if (current == '(') {
+                matchingSymbolTracker++;
+            } else if (current == ')') {
+                if (matchingSymbolTracker > 0) {
+                    matchingSymbolTracker--;
+                } else {
+                    return false;
+                }
+            }
+        }
+        return matchingSymbolTracker == 0;
+    }
+
 
 
 
