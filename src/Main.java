@@ -7,6 +7,7 @@ public class Main {
         StringAlgorithms sA = new StringAlgorithms();
         ArrayAlgorithms aA = new ArrayAlgorithms();
         QueueStackAlgorithms qsA = new QueueStackAlgorithms();
+        HashBasedStructuresAlgorithms hbA = new HashBasedStructuresAlgorithms();
 
 //        List<Integer> dbTest1 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 100, 200, 500, 999);
 //
@@ -99,6 +100,21 @@ public class Main {
 //        System.out.println(stack);
 
         qsA.printNextGreaterElement(new int[] {16, 7, 2, 15});
+
+        System.out.println();
+
+        int[] fstList = {1, 4, 5, 6, 7,};
+
+        int[] sndList = {1, 39, 5, 87, 7,};
+
+        int[] trdList = {1, 1, 1, 2, 3, 4, 4, 4, 5, 5, 6, 7, 7};
+
+
+//        hbA.findMissingElements(fstList, sndList).forEach(System.out::println);
+
+        hbA.displayFrequencyOfEachElement(trdList);
+
+
 
 
 
